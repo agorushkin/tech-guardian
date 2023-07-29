@@ -2,7 +2,7 @@ import config from '/config.json' assert { type: 'json' };
 import rules  from '/static.json' assert { type: 'json' };
 
 import { HttpServer } from 'http';
-import { serve, file } from 'http/utils';
+import { serve, file } from 'http-utils';
 
 const { port } = config;
 
@@ -10,10 +10,11 @@ const server = new HttpServer();
 
 server.route('/public/*')(serve('./public', rules));
 
-import { handler as main    } from '/server/routes/main.ts';
-
-server.route('/'          )(main);
-server.route('/robots.txt')(async ({ respond }) => respond(await file('./public/robots.txt')));
+server.route('/{home}?{/}?')(async ({ respond }) => respond(await file('./public/pages/home.html')));
+server.route('/gaming{/}?' )(async ({ respond }) => respond(await file('./public/pages/gaming.html')));
+server.route('/security{/}?')(async ({ respond }) => respond(await file('./public/pages/security.html')));
+server.route('/privacy{/}?')(async ({ respond }) => respond(await file('./public/pages/privacy.html')));
+server.route('/robots.txt' )(async ({ respond }) => respond(await file('./public/robots.txt')));
 
 server.route('/*')(({ redirect }) => redirect('/'));
 

@@ -3,7 +3,7 @@
     "/": "./",
     "./": "./",
 
-    "http": "https://raw.githubusercontent.com/agorushkin/http-server/master/mod.ts",
-    "http/utils": "https://raw.githubusercontent.com/agorushkin/http-server-utils/master/mod.ts"
+    "http": "https://agorushkin.deno.dev/x/http",
+    "http-utils": "https://agorushkin.deno.dev/x/http-utils"
   }
 }
