@@ -22,3 +22,8 @@ rightArrow.addEventListener('click', () => {
   counter === length - 1 ? counter = 0 : counter++;
   moveCarousel(counter);
 });
+
+setInterval(() => {
+  counter === length - 1 ? counter = 0 : counter++;
+  moveCarousel(counter);
+}, 4000);
