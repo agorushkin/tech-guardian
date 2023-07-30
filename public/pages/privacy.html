@@ -1,1 +1,65 @@
-Privacy Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',0,
+  {'CONTAINER_ID':true});</script>
+
+  <link rel="preload" href="/public/assets/people.webp" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/styles/main.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Guardian</title>
+</head>
+<body>
+  <header id="header">
+    <h1>TECH GUARDIAN</h1>
+    <nav id="header-navbar">
+      <a href="/" class="navbar-link">Home</a>
+      <a href="/gaming" class="navbar-link">Gaming</a>
+      <a href="/privacy" class="navbar-link"><strong>Privacy</strong></a>
+      <a href="/security" class="navbar-link">Security</a>
+    </nav>
+  </header>
+  <main id="content">
+    <div class="content-item">
+      <div class="text-content">
+        <h2>How important is privacy?</h2>
+        <p>Lorem ipsum dolor sit amet. Aut tempora iusto non dignissimos neque est veritatis voluptas sit esse nostrum ea autem doloremque qui atque fugiat ut asperiores optio. Id tenetur dolor ut quas quia et atque velit sed impedit perferendis. Ut placeat impedit eos adipisci voluptatem ut molestias voluptate eum Quis veritatis et consequuntur laborum cum optio consequatur. At dicta repudiandae et delectus voluptas est deleniti laborum cum assumenda libero.
+        </p>
+      </div>
+    </div>
+    <div class="content-item">
+      <div class="carousel-content">
+        <div class="carousel-images">
+          <section><img src="/public/assets/people.webp"></section>
+          <section><img src="/public/assets/people.webp"></section>
+          <section><img src="/public/assets/people.webp"></section>
+          <section><img src="/public/assets/people.webp"></section>
+        </div>
+        <div class="carousel-controls">
+          <span class="arrow left"><strong>&lt;</strong></span>
+          <span class="arrow right"><strong>&gt;</strong></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <nav id="footer-navbar">
+      <a href="/" class="navbar-link"><img src="/public/assets/instagram.svg" class="icon"></a>
+      <a href="/" class="navbar-link"><img src="/public/assets/facebook.svg" class="icon"></a>
+      <a href="/" class="navbar-link"><img src="/public/assets/twitter.svg" class="icon"></a>
+    </nav>
+    <small>© 2023 Marti Whatever Incorporated. All rights reserved.</small>
+  </footer>
+
+  <script src="/public/scripts/carousel.js"></script>
+</body>
+</html>
